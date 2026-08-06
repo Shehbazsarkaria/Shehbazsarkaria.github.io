@@ -1,0 +1,136 @@
+/* ── Reset & Base ── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d0d0d;
+    color: #b0ffb0;
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ── Matrix Rain Background (subtle) ── */
+.matrix-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 30%, #0f1f0f, #030303 80%);
+    opacity: 0.7;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ── Container ── */
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    background: rgba(13, 13, 13, 0.85);
+    padding: 2.5rem 2rem;
+    border: 1px solid #1fbf1f;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.08);
+    backdrop-filter: blur(2px);
+}
+
+/* ── Headers ── */
+h1 {
+    font-size: 2.8rem;
+    color: #8aff8a;
+    text-shadow: 0 0 12px #1fbf1f;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+h2 {
+    color: #7cfc7c;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-bottom: 1px dashed #1fbf1f;
+    padding-bottom: 0.3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    text-shadow: 0 0 6px #0f8f0f;
+}
+
+h3 {
+    color: #b8ffb8;
+    font-weight: 400;
+    margin-top: 0.8rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #6fcf6f;
+    letter-spacing: 1px;
+    margin-top: 0.2rem;
+}
+
+.divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2fbf2f, transparent);
+    margin: 1.2rem 0 1.8rem 0;
+    width: 60%;
+}
+
+/* ── Text ── */
+p {
+    color: #c4f0c4;
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+a {
+    color: #6fdf6f;
+    text-decoration: none;
+    border-bottom: 1px dotted #2f8f2f;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #afffaf;
+    border-bottom: 1px solid #7fff7f;
+    text-shadow: 0 0 10px #1fbf1f;
+}
+
+/* ── Project Items ── */
+.project-item {
+    background: rgba(20, 40, 20, 0.4);
+    padding: 0.8rem 1.2rem;
+    border-left: 3px solid #2fbf2f;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    font-size: 0.9rem;
+    color: #8aff8a;
+}
+
+/* ── Contact / Footer ── */
+.contact p {
+    line-height: 1.8;
+}
+
+footer {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #4f8f4f;
+    border-top: 1px solid #1a3f1a;
+    padding-top: 1.2rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    .container { padding: 1.5rem 1rem; }
+}
