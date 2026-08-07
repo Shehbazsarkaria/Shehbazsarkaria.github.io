@@ -1,1 +1,1 @@
-**Personal Website: [https/Shehbazsarkaria.github.io](https://shehbazsarkaria.github.io/)**
+**Personal Website: [shehbazsarkaria.github.io](https://shehbazsarkaria.github.io/)**
